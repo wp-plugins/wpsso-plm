@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 
 			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoam' ) ).'</td>';
 
-			$rows[] = $this->p->util->th( 'Share as <em>Place</em>', 'medium', 'postmeta-plm_place' ). 
+			$rows[] = $this->p->util->th( 'Share as a <em>Place</em>', 'medium', 'postmeta-plm_place' ). 
 			'<td class="blank">'.$form->get_no_checkbox( 'plm_place' ).'</td>';
 
 			$rows[] = $this->p->util->th( 'Street Address', 'medium', 'postmeta-plm_streetaddr' ). 

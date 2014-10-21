@@ -82,7 +82,6 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			if ( ! empty( $opts['plm_latitude'] ) && ! empty( $opts['plm_longitude'] ) ) {
 
 				$og_place = array();
-				$og_place['og:type'] = 'place';
 				$og_place['place:location:latitude'] = $opts['plm_latitude'];
 				$og_place['place:location:longitude'] = $opts['plm_longitude'];
 				if ( ! empty( $opts['plm_altitude'] ) )
@@ -175,8 +174,11 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 							(as an example), to find the approximate GPS coordinates of a street address.
 							<strong>This field is required to include the Place and Location meta tags.</strong>';
 							break;
+						case 'tooltip-postmeta-plm_place':
+							$text = 'Share this '.$ptn.' as an Open Graph <em>Place</em> Rich Pin.';
+							break;
 						case 'tooltip-postmeta-plm_altitude':
-							$text = 'An optional numeric altitude for the content of this '.$ptn.'.';
+							$text = 'An optional numeric altitude (in feet) for the content of this '.$ptn.'.';
 							break;
 						case 'tooltip-postmeta-plm_streetaddr':
 							$text = 'An optional Street Address for the <em>Place</em> meta tags.';

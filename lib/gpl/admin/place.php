@@ -45,12 +45,15 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 			$rows[] = $this->p->util->th( 'Longitude', 'medium', 'postmeta-plm_longitude' ). 
 			'<td>'.$form->get_input( 'plm_longitude', 'required' ).'</td>';
 
-			$rows[] = $this->p->util->th( 'Altitude', 'medium', 'postmeta-plm_altitude' ). 
+			$rows[] = $this->p->util->th( 'Altitude in Feet', 'medium', 'postmeta-plm_altitude' ). 
 			'<td>'.$form->get_input( 'plm_altitude' ).'</td>';
 
 			$rows[] = '<td colspan="2" class="subsection"><h4>Pinterest Rich Pin Place</h4></td>';
 
 			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoam' ) ).'</td>';
+
+			$rows[] = $this->p->util->th( 'Share as <em>Place</em>', 'medium', 'postmeta-plm_place' ). 
+			'<td class="blank">'.$form->get_no_checkbox( 'plm_place' ).'</td>';
 
 			$rows[] = $this->p->util->th( 'Street Address', 'medium', 'postmeta-plm_streetaddr' ). 
 			'<td class="blank">'.$form->get_options( 'plm_streetaddr' ).'</td>';

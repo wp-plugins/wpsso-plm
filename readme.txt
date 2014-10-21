@@ -1,0 +1,81 @@
+=== WPSSO Place and Location Meta - for Facebook and Pinterest ===
+Contributors: jsmoriss
+Donate Link: http://surniaulula.com/extend/plugins/wpsso-plm/
+Tags: wpsso, place, location, venue, longitude, latitude, address, local
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl.txt
+Requires At Least: 3.0
+Tested Up To: 4.0
+Stable Tag: 1.0
+
+WPSSO extension to provide Facebook / Open Graph Location and Pinterest Rich Pin Place meta tags.
+
+== Description ==
+
+<p><strong>Do you have <em>location-based</em> webpages on your website</strong>, like <em>contact</em> information and/or <em>store locations</em>?</p>
+
+<p>WPSSO Place and Location Meta (WPSSO PLM) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin, extending its features with additional settings pages, tabs, and options, to include Facebook / Open Graph <em>Location</em> and Pinterest Rich Pin <em>Place</em> meta tags in your webpages. WPSSO PLM is <em>fast</em>, <em>efficient</em>, and &mdash; using WPSSO as its framework &mdash; provides <em>accurate</em> information about your content to social websites.</p>
+
+</td></tr></table>
+
+<p>You can download the <a href="https://wordpress.org/plugins/wpsso-plm/">Free version of WPSSO PLM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-plm/">purchase Pro license(s) on SurniaUlula.com</a> (includes a <em>No Risk 30 Day Refund Policy</em>). The Facebook / Open Graph <em>Location</em> meta tags are available in the Free version, and the Pinterest Rich Pin <em>Place</em> meta tags are provided with the Pro version.</p>
+
+= Quick List of Features =
+
+**Free / Basic Version**
+
+**Pro / Power-User Version**
+
+= App Meta Tags =
+
+* **Facebook / Open Graph *Location* Meta Tags** (Free version)
+	* place:location:latitude
+	* place:location:longitude
+	* place:location:altitude
+
+* **Pinterest Rich Pin *Place* Meta Tags** (Pro version)
+	* place:street_address
+	* place:locality
+	* place:region
+	* place:postal_code
+	* place:country_name
+
+<blockquote>
+<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.9.1 and up) is required to use the WPSSO PLM extension. You can use the <em>Free version</em> of WPSSO PLM with either WPSSO Free or Pro, but the <a href="http://surniaulula.com/extend/plugins/wpsso-plm/">WPSSO PLM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a></strong> as well.</p>
+</blockquote>
+
+== Installation ==
+
+= Install and Uninstall =
+
+<ul>
+	<li><a href="http://surniaulula.com/codex/plugins/wpsso-plm/installation/install-the-plugin/">Install the Plugin</a></li>
+	<li><a href="http://surniaulula.com/codex/plugins/wpsso-plm/installation/uninstall-the-plugin/">Uninstall the Plugin</a></li>
+</ul>
+
+== Frequently Asked Questions ==
+
+= Frequently Asked Questions =
+
+== Other Notes ==
+
+== Screenshots ==
+
+1. The WPSSO PLM Settings Page
+2. The Place and Location Tab
+
+== Changelog ==
+
+= Version 1.0 =
+
+* **Bugfixes**
+	* *None*
+* **Enhancements**
+	* Initial release
+
+== Upgrade Notice ==
+
+= 1.0 =
+
+Initial release
+

@@ -1,4 +1,4 @@
-=== WPSSO Place and Location Meta - for Facebook and Pinterest ===
+=== WPSSO Place and Location Meta - for Facebook / Open Graph and Pinterest Rich Pin ===
 Contributors: jsmoriss
 Donate Link: http://surniaulula.com/extend/plugins/wpsso-plm/
 Tags: wpsso, place, location, venue, longitude, latitude, address, local
@@ -8,17 +8,17 @@ Requires At Least: 3.0
 Tested Up To: 4.0
 Stable Tag: 1.0
 
-WPSSO extension to provide Facebook / Open Graph Location and Pinterest Rich Pin Place meta tags.
+WPSSO extension to provide Facebook / Open Graph Location and Pinterest Place Rich Pin meta tags.
 
 == Description ==
 
 <p><strong>Do you have <em>location-based</em> webpages on your website</strong>, like <em>contact</em> information and/or <em>store locations</em>?</p>
 
-<p>WPSSO Place and Location Meta (WPSSO PLM) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin, extending its features with additional settings pages, tabs, and options, to include Facebook / Open Graph <em>Location</em> and Pinterest Rich Pin <em>Place</em> meta tags in your webpages. WPSSO PLM is <em>fast</em>, <em>efficient</em>, and &mdash; using WPSSO as its framework &mdash; provides <em>accurate</em> information about your content to social websites.</p>
+<p>WPSSO Place and Location Meta (WPSSO PLM) works in conjunction with the <a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin, extending its features with additional settings pages, tabs, and options, to include Facebook / Open Graph <em>Location</em> and Pinterest <em>Place</em> Rich Pin meta tags in your webpages. WPSSO PLM is <em>fast</em>, <em>efficient</em>, and &mdash; using WPSSO as its framework &mdash; provides <em>accurate</em> information about your content to social websites.</p>
 
 </td></tr></table>
 
-<p>You can download the <a href="https://wordpress.org/plugins/wpsso-plm/">Free version of WPSSO PLM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-plm/">purchase Pro license(s) on SurniaUlula.com</a> (includes a <em>No Risk 30 Day Refund Policy</em>). The Facebook / Open Graph <em>Location</em> meta tags are available in the Free version, and the Pinterest Rich Pin <em>Place</em> meta tags are provided with the Pro version.</p>
+<p>You can download the <a href="https://wordpress.org/plugins/wpsso-plm/">Free version of WPSSO PLM on WordPress.org</a> and <a href="(http://surniaulula.com/extend/plugins/wpsso-plm/">purchase Pro license(s) on SurniaUlula.com</a> (includes a <em>No Risk 30 Day Refund Policy</em>). The Facebook / Open Graph <em>Location</em> meta tags are available in the Free version, and the Pinterest <em>Place</em> Rich Pin meta tags are provided with the Pro version.</p>
 
 = Quick List of Features =
 
@@ -33,7 +33,7 @@ WPSSO extension to provide Facebook / Open Graph Location and Pinterest Rich Pin
 	* place:location:longitude
 	* place:location:altitude
 
-* **Pinterest Rich Pin *Place* Meta Tags** (Pro version)
+* **Pinterest *Place* Rich Pin Meta Tags** (Pro version)
 	* place:street_address
 	* place:locality
 	* place:region

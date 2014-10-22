@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 			$rows[] = $this->p->util->th( 'Altitude in Feet', 'medium', 'postmeta-plm_altitude' ). 
 			'<td>'.$form->get_input( 'plm_altitude' ).'</td>';
 
-			$rows[] = '<td colspan="2" class="subsection"><h4>Pinterest Rich Pin Place</h4></td>';
+			$rows[] = '<td colspan="2" class="subsection"><h4>Pinterest Place Rich Pin</h4></td>';
 
 			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoam' ) ).'</td>';
 

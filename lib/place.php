@@ -103,6 +103,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				'plm_latitude' => '',
 				'plm_longitude' => '',
 				'plm_altitude' => '',
+				'plm_place' => 0,
 				'plm_streetaddr' => '',
 				'plm_city' => '',
 				'plm_state' => '',
@@ -206,10 +207,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				case 'info-place-general':
 					$text = '<blockquote style="margin-top:0;margin-bottom:10px;">
 					<p>A <em>Place and Location</em> tab can be added to the Social Settings metabox on Posts, Pages, and custom post types,
-					allowing you to enter specific location information for that webpage (ie. GPS coordinates and/or street address).
-					The Open Graph webpage type will be defined as a "place" (instead of an "article", "product", etc.).
-					Facebook and Pinterest can both read and use the "place" meta tags to display your shared <em>location-based</em>
-					webpages accordingly.</p>
+					allowing you to enter specific location information for that webpage (ie. GPS coordinates and/or street address).</p>
 					</blockquote>';
 					break;
 			}

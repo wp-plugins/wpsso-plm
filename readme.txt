@@ -6,7 +6,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt
 Requires At Least: 3.0
 Tested Up To: 4.0
-Stable Tag: 1.0
+Stable Tag: 1.0.0.1
 
 WPSSO extension to provide Facebook / Open Graph Location and Pinterest Place Rich Pin meta tags.
 
@@ -82,12 +82,14 @@ WPSSO extension to provide Facebook / Open Graph Location and Pinterest Place Ri
 
 * **Bugfixes**
 	* *None*
-* **Enhancements**
-	* Initial release
+* **Improvements**
+	* Icons update.
+* **New Features**
+	* *None*
 
 == Upgrade Notice ==
 
-= 1.0 =
+= 1.0.0.1 =
 
-Initial release
+Small update for icons.
 

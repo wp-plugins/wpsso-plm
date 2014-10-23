@@ -1,4 +1,4 @@
-=== WPSSO Place and Location Meta - for Facebook / Open Graph and Pinterest Rich Pin ===
+=== WPSSO Place and Location Meta - for Facebook "Location" and Pinterest "Place" ===
 Contributors: jsmoriss
 Donate Link: http://surniaulula.com/extend/plugins/wpsso-plm/
 Tags: wpsso, place, location, venue, longitude, latitude, address, local
@@ -8,7 +8,7 @@ Requires At Least: 3.0
 Tested Up To: 4.0
 Stable Tag: 1.0.0.1
 
-WPSSO extension to provide Facebook / Open Graph Location and Pinterest Place Rich Pin meta tags.
+WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place" Rich Pin meta tags.
 
 == Description ==
 

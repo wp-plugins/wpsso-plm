@@ -1,6 +1,6 @@
 === WPSSO Place and Location Meta - for Facebook "Location" and Pinterest "Place" ===
 Contributors: jsmoriss
-Donate Link: http://surniaulula.com/extend/plugins/wpsso-plm/
+Donate Link: https://surniaulula.com/extend/plugins/wpsso-plm/
 Tags: wpsso, place, location, venue, longitude, latitude, address, local
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.txt

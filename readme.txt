@@ -44,13 +44,14 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 	* place:location:latitude
 	* place:location:longitude
 	* place:location:altitude
-
 * **Pinterest *Place* Rich Pin Meta Tags** (Pro version)
 	* place:street_address
 	* place:locality
 	* place:region
 	* place:postal_code
 	* place:country_name
+* **Schema Meta Tags** (Pro version)
+        * address
 
 <blockquote>
 <p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.9.1 and up) is required to use the WPSSO PLM extension. You can use the <em>Free version</em> of WPSSO PLM with either WPSSO Free or Pro, but the <a href="http://surniaulula.com/extend/plugins/wpsso-plm/">WPSSO PLM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a></strong> as well.</p>
@@ -78,18 +79,18 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 == Changelog ==
 
-= Version 1.0 =
+= Version 1.1 =
 
 * **Bugfixes**
 	* *None*
 * **Improvements**
-	* Icons update.
+	* Changed the Schema itemscope to "Place" when the 'Share as Place' option is enabled (Pro version).
 * **New Features**
-	* *None*
+	* Added the Schema itemtype "address" meta tag (Pro version).
 
 == Upgrade Notice ==
 
-= 1.0.0.1 =
+= 1.1 =
 
-Small update for icons.
+Added support for the "Place" itemscope and "address" itemtype meta tag (Pro version).
 

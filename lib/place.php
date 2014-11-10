@@ -18,6 +18,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 		public static $cf = array(
 			'opt' => array(				// options
 				'defaults' => array(
+					'add_meta_itemprop_address' => 1,
 					'add_meta_property_place:location:latitude' => 1,
 					'add_meta_property_place:location:longitude' => 1,
 					'add_meta_property_place:location:altitude' => 1,

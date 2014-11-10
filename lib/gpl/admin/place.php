@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 
 		public function filter_meta_place_rows( $rows, $form, $post_info ) {
 
-			$rows[] = '<td colspan="2" class="subsection"><h4>Facebook / Open Graph Location</h4></td>';
+			$rows[] = '<td colspan="2" class="subsection"><h4 style="margin-top:0;">Facebook / Open Graph Location</h4></td>';
 
 			$rows[] = $this->p->util->th( 'Latitude', 'medium', 'postmeta-plm_latitude' ). 
 			'<td>'.$form->get_input( 'plm_latitude', 'required' ).'</td>';

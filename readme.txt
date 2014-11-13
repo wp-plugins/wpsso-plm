@@ -88,9 +88,11 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 * **New Features**
 	* Added the Schema itemtype "address" meta tag (Pro version).
 
+Tested with WPSSO version 2.7.
+
 == Upgrade Notice ==
 
 = 1.1 =
 
-Added support for the "Place" itemscope and "address" itemtype meta tag (Pro version).
+Added support for the "Place" itemscope and "address" itemtype meta tag (Pro version). Tested with WPSSO version 2.7.
 

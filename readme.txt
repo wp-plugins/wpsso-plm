@@ -54,7 +54,7 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
         * address
 
 <blockquote>
-<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.6.9.1 and up) is required to use the WPSSO PLM extension. You can use the <em>Free version</em> of WPSSO PLM with either WPSSO Free or Pro, but the <a href="http://surniaulula.com/extend/plugins/wpsso-plm/">WPSSO PLM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a></strong> as well.</p>
+<p><a href="https://wordpress.org/plugins/wpsso/">WordPress Social Sharing Optimization</a> plugin (version 2.7.2 and up) is required to use the WPSSO PLM extension. You can use the <em>Free version</em> of WPSSO PLM with either WPSSO Free or Pro, but the <a href="http://surniaulula.com/extend/plugins/wpsso-plm/">WPSSO PLM Pro version</a> requires the use of <a href="http://surniaulula.com/extend/plugins/wpsso/">WPSSO Pro</a></strong> as well.</p>
 </blockquote>
 
 == Installation ==
@@ -79,6 +79,15 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 == Changelog ==
 
+= Version 1.1.1 =
+
+* **Bugfixes**
+	* *None*
+* **Improvements**
+	* Added a check on the admin side to make sure WPSSO is installed and active.
+* **New Features**
+	* *None*
+
 = Version 1.1 =
 
 * **Bugfixes**
@@ -91,6 +100,10 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 Tested with WPSSO version 2.7.
 
 == Upgrade Notice ==
+
+= 1.1.1 =
+
+Added a check on the admin side to make sure the WPSSO plugin is installed and active.
 
 = 1.1 =
 

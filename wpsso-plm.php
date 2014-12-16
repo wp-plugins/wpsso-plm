@@ -9,7 +9,7 @@
  * Description: WPSSO extension to provide Open Graph / Facebook Location and Pinterest Place Rich Pin meta tags.
  * Requires At Least: 3.0
  * Tested Up To: 4.0
- * Version: 1.1
+ * Version: 1.1.1
  * 
  * Copyright 2014 - Jean-Sebastien Morisset - http://surniaulula.com/
 */
@@ -22,7 +22,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 	class WpssoPlm {
 
 		private $opt_version = 'plm2';
-		private $min_version = '2.6.9.1';
+		private $min_version = '2.7.2';
 		private $has_min_ver = true;
 
 		public $p;				// class object variables
@@ -34,6 +34,9 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 
 			add_filter( 'wpssoplm_installed_version', array( &$this, 'filter_installed_version' ), 10, 1 );
 			add_filter( 'wpsso_get_config', array( &$this, 'filter_get_config' ), 20, 1 );
+
+			if ( is_admin() )
+				add_action( 'admin_init', array( &$this, 'check_for_wpsso' ) );
 
 			add_action( 'wpsso_init_options', array( &$this, 'init_options' ), 20 );
 			add_action( 'wpsso_init_addon', array( &$this, 'init_addon' ), 20 );
@@ -48,6 +51,16 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			$cf['opt']['version'] .= $this->opt_version;
 			$cf = SucomUtil::array_merge_recursive_distinct( $cf, WpssoPlmConfig::$cf );
 			return $cf;
+		}
+
+		public function check_for_wpsso() {
+			$active_plugins = get_option( 'active_plugins', array() );
+			if ( ! class_exists( 'Wpsso' ) || ! in_array( 'wpsso/wpsso.php', $active_plugins ) ) {
+				require_once( ABSPATH.'wp-admin/includes/plugin.php' );
+				deactivate_plugins( WPSSOPLM_PLUGINBASE );
+				wp_die( '<p>'. sprintf( __( 'WPSSO PLM requires the use of WPSSO &mdash; 
+					Please install and activate the WPSSO plugin before re-activating this extension.', WPSSOPLM_TEXTDOM ) ).'</p>' );
+			}
 		}
 
 		// this action is executed when WpssoOptions::__construct() is executed (class object is created)

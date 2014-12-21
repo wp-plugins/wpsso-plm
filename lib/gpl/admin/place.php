@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 
 			$rows[] = '<td colspan="2" class="subsection"><h4>Pinterest Place Rich Pin</h4></td>';
 
-			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoam' ) ).'</td>';
+			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoplm' ) ).'</td>';
 
 			$rows[] = $this->p->util->th( 'Share as a <em>Place</em>', 'medium', 'postmeta-plm_place' ). 
 			'<td class="blank">'.$form->get_no_checkbox( 'plm_place' ).'</td>';

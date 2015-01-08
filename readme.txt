@@ -79,6 +79,15 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 == Changelog ==
 
+= Version 1.1.2 =
+
+* **Bugfixes**
+	* *None*
+* **Improvements**
+	* Refactored code to rename the $addons array variable to $mods for WPSSO v2.7.5.
+* **New Features**
+	* *None*
+
 = Version 1.1.1 =
 
 * **Bugfixes**
@@ -88,24 +97,9 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 * **New Features**
 	* *None*
 
-= Version 1.1 =
-
-* **Bugfixes**
-	* *None*
-* **Improvements**
-	* Changed the Schema itemscope to "Place" when the 'Share as Place' option is enabled (Pro version).
-* **New Features**
-	* Added the Schema itemtype "address" meta tag (Pro version).
-
-Tested with WPSSO version 2.7.
-
 == Upgrade Notice ==
 
 = 1.1.1 =
 
 Added a check on the admin side to make sure the WPSSO plugin is installed and active.
-
-= 1.1 =
-
-Added support for the "Place" itemscope and "address" itemtype meta tag (Pro version). Tested with WPSSO version 2.7.
 

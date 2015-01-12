@@ -77,7 +77,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			if ( empty( $this->p->options[ 'plm_add_to_'.$post_type->name ] ) )
 				return $og;
 
-			$opts = $this->p->addons['util']['postmeta']->get_options( $obj->ID );
+			$opts = $this->p->mods['util']['postmeta']->get_options( $obj->ID );
 
 			// the latitude and longitude values are required for the place meta tags
 			if ( ! empty( $opts['plm_latitude'] ) && ! empty( $opts['plm_longitude'] ) ) {

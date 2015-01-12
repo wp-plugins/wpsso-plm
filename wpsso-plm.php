@@ -8,8 +8,8 @@
  * License URI: http://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO extension to provide Open Graph / Facebook Location and Pinterest Place Rich Pin meta tags.
  * Requires At Least: 3.0
- * Tested Up To: 4.0
- * Version: 1.1.1
+ * Tested Up To: 4.1
+ * Version: 1.1.2
  * 
  * Copyright 2014 - Jean-Sebastien Morisset - http://surniaulula.com/
 */
@@ -22,7 +22,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 	class WpssoPlm {
 
 		private $opt_version = 'plm2';
-		private $min_version = '2.7.2';
+		private $min_version = '2.7.5';
 		private $has_min_ver = true;
 
 		public $p;				// class object variables
@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 				add_action( 'admin_init', array( &$this, 'check_for_wpsso' ) );
 
 			add_action( 'wpsso_init_options', array( &$this, 'init_options' ), 20 );
-			add_action( 'wpsso_init_addon', array( &$this, 'init_addon' ), 20 );
+			add_action( 'wpsso_init_plugin', array( &$this, 'init_plugin' ), 20 );
 		}
 
 		// this filter is executed at init priority -1
@@ -76,8 +76,8 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			$this->p->is_avail['head']['place'] = true;
 		}
 
-		// this action is executed once all class objects and addons have been created
-		public function init_addon() {
+		// this action is executed once all class objects have been defined and modules have been loaded
+		public function init_plugin() {
 			$shortname = WpssoPlmConfig::$cf['plugin']['wpssoplm']['short'];
 
 			if ( $this->has_min_ver === false ) {

@@ -99,6 +99,10 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 == Upgrade Notice ==
 
+= 1.1.2 =
+
+Refactored code to rename the $addons array variable to $mods for WPSSO v2.7.5.
+
 = 1.1.1 =
 
 Added a check on the admin side to make sure the WPSSO plugin is installed and active.

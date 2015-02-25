@@ -79,6 +79,15 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 == Changelog ==
 
+= Version 1.1.3 =
+
+* **Bugfixes**
+	* *None*
+* **Improvements**
+	* Moved the WpssoPlmPlace class object instantiation to the new 'wpsso_init_objects' action.
+* **New Features**
+	* *None*
+
 = Version 1.1.2 =
 
 * **Bugfixes**
@@ -88,22 +97,9 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 * **New Features**
 	* *None*
 
-= Version 1.1.1 =
-
-* **Bugfixes**
-	* *None*
-* **Improvements**
-	* Added a check on the admin side to make sure WPSSO is installed and active.
-* **New Features**
-	* *None*
-
 == Upgrade Notice ==
 
-= 1.1.2 =
+= 1.1.3 =
 
-Refactored code to rename the $addons array variable to $mods for WPSSO v2.7.5.
-
-= 1.1.1 =
-
-Added a check on the admin side to make sure the WPSSO plugin is installed and active.
+Moved the WpssoPlmPlace class object instantiation to the new 'wpsso_init_objects' action.
 

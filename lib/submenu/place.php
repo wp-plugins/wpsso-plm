@@ -20,7 +20,8 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlace' ) && class_exists( 'WpssoAdmin' ) ) 
 
 		protected function add_meta_boxes() {
 			// add_meta_box( $id, $title, $callback, $post_type, $context, $priority, $callback_args );
-			add_meta_box( $this->pagehook.'_place', 'Place and Location', array( &$this, 'show_metabox_place' ), $this->pagehook, 'normal' );
+			add_meta_box( $this->pagehook.'_place', 'Place and Location', 
+				array( &$this, 'show_metabox_place' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_place() {
@@ -37,12 +38,14 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlace' ) && class_exists( 'WpssoAdmin' ) ) 
 			switch ( $metabox.'-'.$key ) {
 				case 'place-general':
 
-					$rows[] = '<td colspan="2" style="padding-bottom:10px;">'.$this->p->msgs->get( 'info-place-general' ).'</td>';
+					$rows[] = '<td colspan="2" style="padding-bottom:10px;">'.
+						$this->p->msgs->get( 'info-place-general' ).'</td>';
 
 					$checkboxes = '';
 					foreach ( $this->p->util->get_post_types( 'frontend' ) as $post_type )
 						$checkboxes .= '<p>'.$this->form->get_checkbox( 'plm_add_to_'.$post_type->name ).' '.
-							$post_type->label.' '.( empty( $post_type->description ) ? '' : '('.$post_type->description.')' ).'</p>';
+							$post_type->label.' '.( empty( $post_type->description ) ? 
+								'' : '('.$post_type->description.')' ).'</p>';
 
 					$rows[] = $this->p->util->th( 'Show Tab on Post Types', null, 'plm_add_to' ).'<td>'.$checkboxes.'</td>';
 

@@ -72,6 +72,8 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 == Other Notes ==
 
+= Additional Documentation =
+
 == Screenshots ==
 
 01. The WPSSO PLM Settings Page

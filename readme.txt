@@ -78,7 +78,7 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 = Version 1.1.4 =
 
 * **Bugfixes**
-	* Improved the validation of dependencies by checking for the Wpsso class only.
+	* Fixed validation of network-activated plugin dependencies by checking for the Wpsso class only.
 * **Improvements**
 	* *None*
 * **New Features**
@@ -88,5 +88,5 @@ WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place
 
 = 1.1.4 =
 
-Improved the validation of dependencies by checking for the Wpsso class only.
+Fixed validation of network-activated plugin dependencies by checking for the Wpsso class only.
 

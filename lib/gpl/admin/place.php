@@ -37,20 +37,11 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 
 		public function filter_meta_place_rows( $rows, $form, $post_info ) {
 
-			$rows[] = '<td colspan="2" class="subsection"><h4 style="margin-top:0;">Facebook / Open Graph Location</h4></td>';
+			$rows[] = '<td colspan="2" class="subsection"
+				style="margin-top:0;"><h4>Pinterest Place Rich Pin</h4></td>';
 
-			$rows[] = $this->p->util->th( 'Latitude', 'medium', 'postmeta-plm_latitude' ). 
-			'<td>'.$form->get_input( 'plm_latitude', 'required' ).'</td>';
-
-			$rows[] = $this->p->util->th( 'Longitude', 'medium', 'postmeta-plm_longitude' ). 
-			'<td>'.$form->get_input( 'plm_longitude', 'required' ).'</td>';
-
-			$rows[] = $this->p->util->th( 'Altitude in Feet', 'medium', 'postmeta-plm_altitude' ). 
-			'<td>'.$form->get_input( 'plm_altitude' ).'</td>';
-
-			$rows[] = '<td colspan="2" class="subsection"><h4>Pinterest Place Rich Pin</h4></td>';
-
-			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoplm' ) ).'</td>';
+			$rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', 
+				array( 'lca' => 'wpssoplm' ) ).'</td>';
 
 			$rows[] = $this->p->util->th( 'Share as a <em>Place</em>', 'medium', 'postmeta-plm_place' ). 
 			'<td class="blank">'.$form->get_no_checkbox( 'plm_place' ).'</td>';
@@ -69,6 +60,17 @@ if ( ! class_exists( 'WpssoPlmGplAdminPlace' ) ) {
 
 			$rows[] = $this->p->util->th( 'Country', 'medium', 'postmeta-plm_country' ). 
 			'<td class="blank">'.$form->get_options( 'plm_country' ).'</td>';
+
+			$rows[] = '<td colspan="2" class="subsection"><h4>Facebook / Open Graph Location</h4></td>';
+
+			$rows[] = $this->p->util->th( 'Latitude', 'medium', 'postmeta-plm_latitude' ). 
+			'<td>'.$form->get_input( 'plm_latitude', 'required' ).'</td>';
+
+			$rows[] = $this->p->util->th( 'Longitude', 'medium', 'postmeta-plm_longitude' ). 
+			'<td>'.$form->get_input( 'plm_longitude', 'required' ).'</td>';
+
+			$rows[] = $this->p->util->th( 'Altitude in Feet', 'medium', 'postmeta-plm_altitude' ). 
+			'<td>'.$form->get_input( 'plm_altitude' ).'</td>';
 
 			return $rows;
 		}

@@ -88,7 +88,8 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				if ( ! empty( $opts['plm_altitude'] ) )
 					$og_place['place:location:altitude'] = $opts['plm_altitude'];
 
-				return array_merge( $og, apply_filters( $this->p->cf['lca'].'_og_place', $og_place, $use_post, $obj ) );
+				return array_merge( $og, apply_filters( $this->p->cf['lca'].'_og_place', 
+					$og_place, $use_post, $obj ) );
 			}
 			return $og;
 		}
@@ -145,14 +146,10 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$short_pro = $short.' Pro';
 			switch ( $idx ) {
 				case 'tooltip-side-location-meta-tags':
-					$text = 'If location information is entered under the <em>Place and Location</em> tab 
-					(in the Social Settings metabox), '.$short.' will include additional meta tags for 
-					Facebook.';
+					$text = 'If location information is entered under the <em>Place and Location</em> tab (in the Social Settings metabox), '.$short.' will include additional meta tags for Facebook.';
 					break;
 				case 'tooltip-side-place-meta-tags':
-					$text = 'If location information is entered under the <em>Place and Location</em> tab 
-					(in the Social Settings metabox), '.$short_pro.' will include additional meta tags for 
-					Pinterest\'s <em>Place</em> Rich Pin.';
+					$text = 'If location information is entered under the <em>Place and Location</em> tab (in the Social Settings metabox), '.$short_pro.' will include additional meta tags for Pinterest\'s <em>Place</em> Rich Pin.';
 					break;
 			}
 			return $text;
@@ -165,16 +162,10 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				case ( strpos( $idx, 'tooltip-postmeta-plm_' ) !== false ? true : false ):
 					switch ( $idx ) {
 						case 'tooltip-postmeta-plm_latitude':
-							$text = 'The numeric <em>decimal degrees</em> latitude for the content of this '.$ptn.'.
-							You may use a service like <a href="http://www.gps-coordinates.net/">Google Maps GPS Coordinates</a>
-							(as an example), to find the approximate GPS coordinates of a street address.
-							<strong>This field is required to include the Place and Location meta tags.</strong>';
+							$text = 'The numeric <em>decimal degrees</em> latitude for the content of this '.$ptn.'. You may use a service like <a href="http://www.gps-coordinates.net/">Google Maps GPS Coordinates</a> (as an example), to find the approximate GPS coordinates of a street address. <strong>This field is required to include the Place and Location meta tags.</strong>';
 							break;
 						case 'tooltip-postmeta-plm_longitude':
-							$text = 'The numeric <em>decimal degrees</em> longitude for the content of this '.$ptn.'.
-							You may use a service like <a href="http://www.gps-coordinates.net/">Google Maps GPS Coordinates</a>
-							(as an example), to find the approximate GPS coordinates of a street address.
-							<strong>This field is required to include the Place and Location meta tags.</strong>';
+							$text = 'The numeric <em>decimal degrees</em> longitude for the content of this '.$ptn.'. You may use a service like <a href="http://www.gps-coordinates.net/">Google Maps GPS Coordinates</a> (as an example), to find the approximate GPS coordinates of a street address. <strong>This field is required to include the Place and Location meta tags.</strong>';
 							break;
 						case 'tooltip-postmeta-plm_place':
 							$text = 'Share this '.$ptn.' as an Open Graph <em>Place</em> Rich Pin.';
@@ -207,8 +198,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			switch ( $idx ) {
 				case 'info-place-general':
 					$text = '<blockquote style="margin-top:0;margin-bottom:10px;">
-					<p>A <em>Place and Location</em> tab can be added to the Social Settings metabox on Posts, Pages, and custom post types,
-					allowing you to enter specific location information for that webpage (ie. GPS coordinates and/or street address).</p>
+					<p>A <em>Place and Location</em> tab can be added to the Social Settings metabox on Posts, Pages, and custom post types, allowing you to enter specific location information for that webpage (ie. GPS coordinates and/or street address).</p>
 					</blockquote>';
 					break;
 			}

@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					),
 					'lib' => array(
 						'submenu' => array (
-							'wpssoplm-separator-0' => '',
+							'wpssoplm-separator-0' => 'PLM Extension',
 							'place' => 'Place and Location Meta',
 						),
 						'gpl' => array(

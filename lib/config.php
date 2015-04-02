@@ -15,7 +15,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(
-					'version' => '2.0dev1',	// plugin version
+					'version' => '1.2',	// plugin version
 					'short' => 'WPSSO PLM',
 					'name' => 'WPSSO Place and Location Meta (WPSSO PLM)',
 					'desc' => 'WPSSO extension to provide Facebook / Open Graph "Location" and Pinterest "Place" Rich Pin meta tags.',
@@ -42,26 +42,23 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					),
 					'lib' => array(
 						'submenu' => array (
-							'wpssoplm-separator-0' => 'PLM',
-							'place' => 'Place and Location Meta',
-							'corp-contact' => 'Corporate Contacts',
+							'wpssoplm-separator-0' => 'PLM Extension',
+							'plm-general' => 'Place and Location Meta',
 						),
 						'gpl' => array(
 							'admin' => array(
-								'place' => 'Place and Location Meta',
+								'plm-general' => 'Place and Location Meta',
 							),
 						),
 						'pro' => array(
 							'admin' => array(
-								'place' => 'Place and Location Meta',
+								'plm-general' => 'Place and Location Meta',
 							),
 							'head' => array(
-								'place' => 'Place Meta Tags',
+								'place-meta' => 'Place Meta Tags',
 							),
 						),
 					),
-					'cp' => array(
-					)
 				),
 			),
 		);
